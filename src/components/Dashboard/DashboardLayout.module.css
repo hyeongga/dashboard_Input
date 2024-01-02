@@ -1,0 +1,50 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-family: "DM Sans";
+}
+
+.main {
+  width: 82%;
+  min-width: 1024px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.main {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.main::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.detail {
+  width: 980px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0px 40px 0px;
+
+  overflow-y: auto;
+}
+.detail {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.detail::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../../src/assets/font/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+}
